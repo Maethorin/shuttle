@@ -1,0 +1,32 @@
+li.engine {
+    position: relative;
+    list-style: none;
+    overflow:   hidden;
+    width: 320px;
+    height: 450px;
+    background: url(../img/engine-painel.png) center center no-repeat;
+    float: left;
+}
+
+.start-engine {
+    border: none;
+    width: 54px;
+    height: 54px;
+    background: url(../img/glass-buttons.png) center bottom no-repeat;
+    color: #888;
+    cursor: pointer;
+    left: 138px;
+    position: absolute;
+    top:      10px;
+}
+
+.start-engine.red {
+    background-position: center top;
+    color: #888;
+}
+
+.start-engine.green {
+    background-position: center -58px;
+    color: #222;
+}
+

@@ -1,0 +1,24 @@
+.value {
+    border: 1px solid #DDD;
+    padding: 2px 6px 1px 6px;
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    width: 150px;
+    text-align: right;
+    color: #adff2f;
+    background-color: #444;
+}
+
+.velocity {
+    overflow: hidden;
+    position: relative;
+}
+
+.fuel-tank {
+    overflow: hidden;
+    left: 130px;
+    position: absolute;
+    top:      260px;
+}
+
+

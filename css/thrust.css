@@ -1,0 +1,10 @@
+.thrust {
+}
+
+.thrust-gauge {
+    overflow: hidden;
+    float: left;
+    left: 130px;
+    position: absolute;
+    top:      80px;;
+}

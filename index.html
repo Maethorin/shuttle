@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/engine.css" />
+        <link rel="stylesheet" href="css/thrust.css" />
+        <link rel="stylesheet" href="css/slider.css" />
+        <link rel="stylesheet" href="css/jgauge.css" />
+        <link rel="stylesheet" href="css/altimeter.css" />
+
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery/jquery.tools.js"></script>
+        <script type="text/javascript" src="jquery/jquery.rotate.js"></script>
+        <script type="text/javascript" src="jquery/jgauge.js"></script>
+        <script type="text/javascript" src="jquery/sub.bus.js"></script>
+        <script type="text/javascript" src="lib/world.js"></script>
+        <script type="text/javascript" src="lib/odometer.js"></script>
+        <script type="text/javascript" src="lib/altimeter.js"></script>
+        <script type="text/javascript" src="lib/ship.js"></script>
+        <script type="text/javascript" src="lib/fuel.js"></script>
+        <script type="text/javascript" src="lib/engine.js"></script>
+        <script type="text/javascript" src="lib/thrust.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Simulation data</legend>
+            <div class="mass">
+                Mass:
+                <select name="mass" id="mass">
+                    <option value="1000">1,000 Kg</option>
+                    <option value="2000">2,000 Kg</option>
+                    <option value="3000">3,000 Kg</option>
+                    <option value="4000">4,000 kg</option>
+                </select>
+            </div>
+            <div class="engine">
+                Engine power:
+                <select name="engine" id="engine">
+                    <option value="0">Thrust: 10,000 N | Tank Capacity: 2,000 Kg</option>
+                    <option value="1">Thrust: 20,000 N | Tank Capacity: 4,000 Kg</option>
+                    <option value="2">Thrust: 30,000 N | Tank Capacity: 6,000 kg</option>
+                    <option value="3">Thrust: 40,000 N | Tank Capacity: 8,000 Kg</option>
+                </select>
+            </div>
+            <div class="fuel-supply-container">
+                Fuel supply:
+                <input type="range" id="fuel-supply" min="0" max="0" value="0" />
+                <span class="value">0</span> Kg
+            </div>
+            <button id="start">Start simulation</button>
+        </fieldset>
+
+
+        <fieldset id="ship">
+            <legend>Ship</legend>
+            <div class="velocity">
+                <div id="odometer" class="jgauge"></div>
+                <!--Velocity: <span class="value">0.0000</span> Km/h<br/>-->
+            </div>
+            <div class="distance">
+                <!--Distance: <span class="value">0.0000</span> Km<br/>-->
+            </div>
+
+            <div class="aceleration">
+                Aceleration: <span class="value">0.0000</span> m/s<sup style="font-size: 9px;">2</sup><br/>
+            </div>
+
+            <ul class="engines">
+            </ul>
+        </fieldset>
+    </body>
+</html>

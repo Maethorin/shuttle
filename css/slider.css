@@ -1,0 +1,82 @@
+
+/* slider root element */
+.thrust .slider {
+    background: transparent url(../img/thrust-level.png) no-repeat center center;
+    height:      425px;
+    position:relative;
+    cursor:pointer;
+    width: 79px;
+    float:left;
+    clear:right;
+    margin-top:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:inset 0 0 8px #000;
+    margin-left: 30px;
+}
+
+/* the input field */
+.range {
+    display: none;
+}
+
+/* progress bar (enabled with progress: true) */
+.progress {
+    width: 9px;
+    background-color:#C5FF00;
+    display:none;
+    opacity:0.6;
+    position: absolute;
+    bottom: 0;
+}
+
+/* drag handle */
+.slider .handle {
+    background:#fff url(../img/thrust-handle.png) repeat-x 0 0;
+    height:22px;
+    width:84px;
+    left:-4px;
+    position:absolute;
+    display:block;
+    margin-top:1px;
+    border:1px solid #000;
+    cursor:move;
+    -moz-box-shadow:0 0 6px #000;
+    -webkit-box-shadow:0 0 6px #000;
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
+
+}
+
+.fuel-slider {
+    background:#3C72E6 url(../img/h30.png) repeat-x 0 0;
+    height:9px;
+    position:relative;
+    cursor:pointer;
+    border:1px solid #333;
+    width:300px;
+    /*float:left;*/
+    clear:right;
+    margin-top:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:inset 0 0 8px #000;
+    display: inline-block;
+}
+
+.fuel-slider .handle {
+    background:#fff url(../img/h30.png) repeat-x 0 0;
+    height:28px;
+    width:28px;
+    top:-12px;
+    position:absolute;
+    display:block;
+    margin-top:1px;
+    border:1px solid #000;
+    cursor:move;
+    -moz-box-shadow:0 0 6px #000;
+    -webkit-box-shadow:0 0 6px #000;
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
+
+}

@@ -1,0 +1,10 @@
+.altimeter-indicator {
+    width: 200px;
+    height: 200px;
+    background: url(../img/altimeter-gauge.png) center center no-repeat;
+    position: relative;
+}
+
+.altimeter-indicator img {
+    position: absolute;
+}
